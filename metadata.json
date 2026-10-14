@@ -1,0 +1,6 @@
+{
+  "name": "100 Data Engineering & AI Concepts Hub",
+  "description": "Plataforma interativa para dominar os 100 conceitos fundamentais de Engenharia de Dados e IA com simuladores visuais, laboratórios práticos e cronograma estruturado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+{
+  "summary": "Plano de implementação detalhado para:\n1. Navegação imersiva e exibição in-place em modal sem rolagem da tela\n2. Correção definitiva das respostas dos quizzes (distribuição aleatória e balanceada entre A, B, C e D)\n3. Terminal interativo estilo hacker com histórico (Arrow Up/Down), autocomplete (Tab) e comandos reais\n4. Redesenho premium do logotipo e ícone da aplicação\n5. Três novos Laboratórios Visuais interativos: CDC com Debezium, Invalidação de Cache Redis e Compressão Parquet (Snappy vs ZSTD vs GZIP)",
+  "updatedAt": "2026-10-14T23:10:42.950746688Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

@@ -1,0 +1,241 @@
+import { Language } from '../types/concept';
+
+export const TRANSLATIONS = {
+  pt: {
+    // Brand & Header
+    appTitle: 'Engenharia de Dados & IA',
+    appBadge: 'HUB',
+    appSubtitle: 'O Roadmap Real • 100 Conceitos',
+    navMatrix: 'Roadmap Pôster (100)',
+    navGraph: 'Grafo de Conhecimento (D3)',
+    navLabs: 'Laboratórios Visuais (12)',
+    navPromptEngineering: 'Engenharia de Prompts (IA)',
+    navArchitecture: 'Arquitetura & Trade-offs',
+    navSchedule: 'Cronograma Estruturado',
+    navQuizzes: 'Quizzes & Desafios',
+    streakTooltip: 'Sequência de dias ativos de estudo',
+    daysCount: 'dias',
+    overallProgress: 'Progresso Geral',
+
+    // Language Selector
+    langPt: 'Português (Brasil)',
+    langEn: 'English',
+    selectLanguage: 'Idioma',
+
+    // Hero Section
+    roadmapTag: 'O Roadmap Real (Não Ferramentas. Conceitos.)',
+    roadmapTitle: '100 Conceitos de Engenharia de Dados & IA',
+    roadmapQuote: '"Não aprenda ferramentas. Aprenda como os sistemas funcionam."',
+    roadmapDesc: 'Domine os fundamentos arquiteturais, memória, I/O e algoritmos que governam o ecossistema moderno de Big Data e Inteligência Artificial.',
+    progressText: 'Progresso Geral:',
+    of: 'de',
+    completedLabel: 'dominados',
+
+    // Filters
+    searchPlaceholder: 'Buscar por nome, tag ou #número...',
+    allSections: 'Todas as 7 Seções',
+    allDifficulties: 'Todas Dificuldades',
+    diffBeginner: 'Iniciante',
+    diffIntermediate: 'Intermediário',
+    diffAdvanced: 'Avançado',
+    allStatuses: 'Todos os Status',
+    statusCompleted: 'Dominados',
+    statusInProgress: 'Em Estudo',
+    statusNotStarted: 'Não Iniciados',
+    statusBookmarked: 'Favoritos',
+    viewPoster: 'Grade Pôster',
+    viewCards: 'Cards',
+    conceptsFound: 'conceitos encontrados',
+
+    // Status Names
+    statusCompletedLabel: '🟢 Dominado!',
+    statusInProgressLabel: '🟡 Em Estudo',
+    statusNotStartedLabel: '⚪ Não Iniciado',
+
+    // Detail Modal
+    tabOverview: 'Visão Geral & Mecânica',
+    tabCode: 'Código & Prática',
+    tabQuiz: 'Quiz de Fixação',
+    tabTutor: 'Tutor de IA',
+    modalDef: 'O que é e Definição',
+    modalWhy: 'Por que importa na prática?',
+    modalUnderHood: 'Como funciona por debaixo dos panos (Under The Hood)',
+    modalRealWorld: 'Caso Real de Produção',
+    modalAntiPatterns: 'Armadilhas Comuns (O que EVITAR)',
+    modalBestPractices: 'Boas Práticas Recomendadas',
+    modalRelated: 'Conceitos Conectados no Roadmap:',
+    modalCopyCode: 'Copiar Código',
+    modalCopied: 'Copiado!',
+    modalNoCode: 'Este conceito é puramente teórico/arquitetural.',
+    modalLabAvailable: 'Laboratório Visual Disponível!',
+    modalLabDesc: 'Este conceito possui um simulador didático interativo dedicado.',
+    modalOpenLab: 'Abrir Laboratório',
+    modalQuizTitle: 'Questão de Fixação',
+    modalQuizCorrect: 'Resposta Correta! Conceito marcado como Dominado!',
+    modalQuizIncorrect: 'Resposta Incorreta. Revise a explicação abaixo:',
+    modalTutorTitle: 'Tutor Inteligente de Engenharia de Dados & IA',
+    modalTutorDesc: 'Tire dúvidas em tempo real, peça exemplos de arquitetura ou pergunte como este conceito cai em entrevistas do Google e Meta.',
+    modalTutorPlaceholder: 'Ex: Como aplicar este conceito na prática na nuvem?',
+    modalTutorButton: 'Perguntar ao Tutor',
+    modalTutorThinking: 'Pensando...',
+    modalTutorInterviewBtn: 'Perguntas de Entrevista',
+    modalTutorTradeoffsBtn: 'Comparativo & Trade-offs',
+
+    // Schedule View
+    scheduleTitle: 'Cronograma Estruturado de Aprendizado',
+    scheduleCompletedDays: 'Dias Concluídos:',
+    scheduleRhythm: 'Ritmo Consistente!',
+    scheduleFilterWeek: 'Filtrar Semana:',
+    scheduleAllWeeks: 'Todas as Semanas',
+    scheduleWeek: 'Semana',
+    scheduleDay: 'Dia',
+    scheduleEstTime: 'min',
+    scheduleGoal: 'Meta de Conhecimento:',
+    scheduleTask: 'Tarefa Prática do Dia:',
+    scheduleStudyConcept: 'Estudar Conceito',
+    scheduleMarkDone: 'Marcar Concluído',
+    scheduleMarkedDone: 'Concluído ✓',
+
+    // Visual Labs Hub
+    labsBannerTag: 'Laboratórios Visuais & Didáticos Interativos',
+    labsBannerTitle: 'Aprenda Engenharia de Dados e IA na Prática',
+    labsBannerDesc: '"Não aprenda ferramentas. Aprenda como os sistemas funcionam." Interaja com simuladores arquiteturais em tempo real: veja bytes lidos do disco, shuffles trafegando na rede, commits de Lakehouse e espaços vetoriais multidimensionais.',
+
+    // Quiz Hub & System Design
+    quizHubFlashTab: 'Quizzes de Fixação dos 100 Conceitos',
+    quizHubDesignTab: 'Desafios de System Design',
+    quizHubBannerTag: 'Centro de Testes & Fixação Prática',
+    quizHubBannerTitle: 'Simulado Interativo de Conceitos',
+    quizHubBannerDesc: 'Teste seus conhecimentos em tempo real com explicações completas para cada alternativa correta ou incorreta.',
+    quizScoreCorrect: 'Acertos:',
+    quizScoreTotal: 'Total Respondido:',
+    quizNextQuestion: 'Próxima Questão',
+    quizQuestionOf: 'Questão',
+    quizViewTheory: 'Ver Teoria Completa',
+
+    // Footer
+    footerQuote: '"Não aprenda ferramentas. Aprenda como os sistemas funcionam."',
+    footerAttribution: 'Baseado no renomado roadmap de 100 conceitos de Engenharia de Dados & IA por B V SARATH CHANDRA.',
+    footerSub: 'Laboratórios Visuais, Cronogramas e Simuladores Didáticos Interativos desenvolvidos para o Google AI Studio.',
+  },
+
+  en: {
+    // Brand & Header
+    appTitle: 'Data Engineering & AI',
+    appBadge: 'HUB',
+    appSubtitle: 'The Real Roadmap • 100 Concepts',
+    navMatrix: 'Roadmap Poster (100)',
+    navGraph: 'Knowledge Graph (D3)',
+    navLabs: 'Visual Labs (12)',
+    navPromptEngineering: 'Prompt Engineering (AI)',
+    navArchitecture: 'Data Architecture & Trade-offs',
+    navSchedule: 'Study Schedule',
+    navQuizzes: 'Quizzes & Challenges',
+    streakTooltip: 'Active study streak in days',
+    daysCount: 'days',
+    overallProgress: 'Overall Progress',
+
+    // Language Selector
+    langPt: 'Português (Brasil)',
+    langEn: 'English',
+    selectLanguage: 'Language',
+
+    // Hero Section
+    roadmapTag: 'The Real Roadmap (Not Tools. Concepts.)',
+    roadmapTitle: '100 Data Engineering & AI Concepts',
+    roadmapQuote: '"Don\'t learn tools. Learn how systems work."',
+    roadmapDesc: 'Master the architectural foundations, memory, I/O, and algorithms governing the modern Big Data and Artificial Intelligence ecosystem.',
+    progressText: 'Overall Progress:',
+    of: 'of',
+    completedLabel: 'mastered',
+
+    // Filters
+    searchPlaceholder: 'Search by name, tag, or #number...',
+    allSections: 'All 7 Sections',
+    allDifficulties: 'All Difficulties',
+    diffBeginner: 'Beginner',
+    diffIntermediate: 'Intermediate',
+    diffAdvanced: 'Advanced',
+    allStatuses: 'All Statuses',
+    statusCompleted: 'Mastered',
+    statusInProgress: 'In Progress',
+    statusNotStarted: 'Not Started',
+    statusBookmarked: 'Bookmarked',
+    viewPoster: 'Poster Grid',
+    viewCards: 'Cards',
+    conceptsFound: 'concepts found',
+
+    // Status Names
+    statusCompletedLabel: '🟢 Mastered!',
+    statusInProgressLabel: '🟡 In Progress',
+    statusNotStartedLabel: '⚪ Not Started',
+
+    // Detail Modal
+    tabOverview: 'Overview & Mechanics',
+    tabCode: 'Code & Practice',
+    tabQuiz: 'Concept Quiz',
+    tabTutor: 'AI Tutor',
+    modalDef: 'What It Is & Definition',
+    modalWhy: 'Why It Matters in Production',
+    modalUnderHood: 'Under The Hood (Memory, Disk & Network)',
+    modalRealWorld: 'Real-World Production Case',
+    modalAntiPatterns: 'Common Gotchas & Anti-Patterns (What to AVOID)',
+    modalBestPractices: 'Recommended Best Practices',
+    modalRelated: 'Connected Roadmap Concepts:',
+    modalCopyCode: 'Copy Code',
+    modalCopied: 'Copied!',
+    modalNoCode: 'This concept is purely architectural/theoretical.',
+    modalLabAvailable: 'Visual Lab Available!',
+    modalLabDesc: 'This concept has a dedicated interactive didactic simulator.',
+    modalOpenLab: 'Launch Simulator',
+    modalQuizTitle: 'Concept Retention Quiz',
+    modalQuizCorrect: 'Correct Answer! Concept marked as Mastered!',
+    modalQuizIncorrect: 'Incorrect Answer. Review the explanation below:',
+    modalTutorTitle: 'AI Data Engineering & AI Tutor',
+    modalTutorDesc: 'Ask questions in real time, request architectural examples, or find out how this concept appears in Google and Meta interviews.',
+    modalTutorPlaceholder: 'E.g.: How do I apply this concept in production in the cloud?',
+    modalTutorButton: 'Ask Tutor',
+    modalTutorThinking: 'Thinking...',
+    modalTutorInterviewBtn: 'Interview Questions',
+    modalTutorTradeoffsBtn: 'Comparisons & Trade-offs',
+
+    // Schedule View
+    scheduleTitle: 'Structured Learning Schedule',
+    scheduleCompletedDays: 'Completed Days:',
+    scheduleRhythm: 'Consistent Rhythm!',
+    scheduleFilterWeek: 'Filter Week:',
+    scheduleAllWeeks: 'All Weeks',
+    scheduleWeek: 'Week',
+    scheduleDay: 'Day',
+    scheduleEstTime: 'min',
+    scheduleGoal: 'Knowledge Goal:',
+    scheduleTask: 'Daily Practical Task:',
+    scheduleStudyConcept: 'Study Concept',
+    scheduleMarkDone: 'Mark Complete',
+    scheduleMarkedDone: 'Completed ✓',
+
+    // Visual Labs Hub
+    labsBannerTag: 'Interactive Didactic & Visual Labs',
+    labsBannerTitle: 'Learn Data Engineering & AI by Doing',
+    labsBannerDesc: '"Don\'t learn tools. Learn how systems work." Interact with architectural simulators in real time: see bytes read from disk, shuffles traveling over the network, Lakehouse commits, and high-dimensional vector spaces.',
+
+    // Quiz Hub & System Design
+    quizHubFlashTab: '100 Concepts Retention Quizzes',
+    quizHubDesignTab: 'System Design Challenges',
+    quizHubBannerTag: 'Practice & Testing Center',
+    quizHubBannerTitle: 'Interactive Concept Practice',
+    quizHubBannerDesc: 'Test your knowledge in real time with comprehensive explanations for every right and wrong option.',
+    quizScoreCorrect: 'Correct:',
+    quizScoreTotal: 'Total Answered:',
+    quizNextQuestion: 'Next Question',
+    quizQuestionOf: 'Question',
+    quizViewTheory: 'View Full Theory',
+
+    // Footer
+    footerQuote: '"Don\'t learn tools. Learn how systems work."',
+    footerAttribution: 'Based on the renowned 100 Data Engineering & AI Concepts roadmap by B V SARATH CHANDRA.',
+    footerSub: 'Interactive Visual Labs, Schedules, and Didactic Simulators built for Google AI Studio.',
+  },
+} as const;
+
+export type TranslationKey = keyof typeof TRANSLATIONS.pt;
